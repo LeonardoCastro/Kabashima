@@ -8,7 +8,7 @@ Section 3.1
 - Code to obtain the vector A for different values of N following a single instance algorithm. *
 
 Section 3.2
-- Non-backtracking extrapolation for random regular graphs for different values of Delta. *
+- Non-backtracking extrapolation for random regular graphs for different values of Delta.
 - Non-backtracking extrapolation for random regular graphs for different values of N. *
 - Non-backtracking extrapolation for Erdös-Rényi 4 networks using single instance. *
 - Non-backtracking extrapolation for Erdös-Rényi 4 networls using population dynamics. *
