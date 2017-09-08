@@ -22,4 +22,4 @@ Appendix B
 - Code to plot Cobweb method.
 - Population dynamics to obtain distribution values of A with respect to time *
 
-* The repository is under construction as the codes I have written are not properly commented. I will upload them during the next few days.
+(*) The repository is under construction as the codes I have written are not properly commented. I will upload them during the next few days.
