@@ -1,6 +1,25 @@
 # Kabashima
 Matlab codes for my M.Sc. Dissertation Project
 
+The codes posted are those used to obtain the different results in the project. They are organized following the same structure as the written work.
 
-The repository is under construction as the codes I have written are not properly commented. I will upload them during the next few days.
+Section 3.1
+- Population Dynamics to find distribution of entries of first eigenvector. *
+- Code to obtain the vector A for different values of N following a single instance algorithm. *
 
+Section 3.2
+- Non-backtracking extrapolation for random regular graphs for different values of Delta. *
+- Non-backtracking extrapolation for random regular graphs for different values of N. *
+- Non-backtracking extrapolation for Erdös-Rényi 4 networks using single instance. *
+- Non-backtracking extrapolation for Erdös-Rényi 4 networls using population dynamics. *
+- Population dynamics for Erdös-Rényi 4 to observe that cavity field A does not converge. *
+
+Appendix A
+- Code to generate random numbers following a poissonian distribution.
+- Code to generate random neighbours used in population dynamics.
+
+Appendix B
+- Code to plot Cobweb method.
+- Population dynamics to obtain distribution values of A with respect to time *
+
+* The repository is under construction as the codes I have written are not properly commented. I will upload them during the next few days.

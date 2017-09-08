@@ -1,20 +1,23 @@
+% Function to generate random grahs following Algorithm 2 of Appendix B.
+% The function returns the adjacency matrix
+
 function A = kabashimagen(N, degs)
 
     % Making sure that the number of degrees is even
     if mod(sum(degs), 2) ~= 0
         auxidx = randi([1, length(degs)]);
-        degs(auxidx) = degs(auxidx) + 1; 
+        degs(auxidx) = degs(auxidx) + 1;
     end
 
-    
+    % Control in order to assure that the desired distribution of degrees is obtained
     expDegs = zeros(length(degs), 1);
     while ~isequal(expDegs, degs)
-        
+
         % List of indices given by the degrees
         dsum = sum(degs);
         U = zeros(dsum, 1, 'int64');
-    
-        auxidx = 0; 
+
+        auxidx = 0;
         for i = 1:length(degs)
             for d = 1:degs(i)
                 auxidx = auxidx + 1;
@@ -26,12 +29,13 @@ function A = kabashimagen(N, degs)
         A = spalloc(N, N, dsum);
         clearvars dsum auxidx
 
+        % While there are nodes to link
         while ~isempty(U)
 
             % If there are not only self-links
             if length( find( U == U(1))) ~= length(U)
 
-                % Choosing two random elements 
+                % Choosing two random elements
                 i = randi([1, length(U)]);
                 j = randi([1, length(U)]);
 
@@ -47,7 +51,7 @@ function A = kabashimagen(N, degs)
 
                         [rows, cols] = find( A(J1, J2));
 
-                        if ~isempty(rows) 
+                        if ~isempty(rows)
                             % Delete the existing links
 
                             link = randi([1, length(rows)]);
@@ -115,11 +119,10 @@ function A = kabashimagen(N, degs)
                 if length(U) > 2
                     U = U(3:end);
                 else
-                    U = [];         
+                    U = [];
                 end
             end
         end
     expDegs = A*ones(N, 1);
     end
 end
-
