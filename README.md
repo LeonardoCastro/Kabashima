@@ -1,5 +1,6 @@
 # Kabashima
-Matlab codes for my M.Sc. Dissertation Project
+Matlab codes for my M.Sc. Dissertation Project:
+Finding the first eigenvalue of large random networks using a cavity approach and a non-backtracking operator.
 
 The codes posted are those used to obtain the different results in the project. They are organized following the same structure as the written work.
 
@@ -23,6 +24,7 @@ Section 3.1
 
 [Appendix C](https://github.com/LeonardoCastro/Kabashima/tree/master/Appendix%20C)
 - Code to plot Cobweb method.
-- Population dynamics to obtain distribution values of A with respect to time *
+- Code to obtain the values of A with respect to time in the thermodynamic limit.
+
 
 (*) The repository is under construction as the codes I have written are not properly commented. I will upload them during the next few days.
